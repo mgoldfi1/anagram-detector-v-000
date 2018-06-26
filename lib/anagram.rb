@@ -10,7 +10,7 @@ attr_accessor :word
   def match(array)
     anagrams = []
    array.each do |x|
-    if self.word.split("").sort == x.split("").sort
+    if @word.split("").sort == x.split("").sort
       anagrams << x
     end
   end
